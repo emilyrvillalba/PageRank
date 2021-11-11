@@ -45,6 +45,7 @@ public class crawler {
 		
 		String next_link = "";
 		
+		// extract url
 		for(Element link : doc.select("a[href]")) {
 			next_link = link.absUrl("href");
 			System.out.println("url: " + url);
